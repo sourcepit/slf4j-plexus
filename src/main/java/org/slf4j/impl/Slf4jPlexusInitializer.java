@@ -19,6 +19,7 @@ import org.codehaus.plexus.logging.LoggerManager;
 import org.codehaus.plexus.personality.plexus.lifecycle.phase.Contextualizable;
 import org.slf4j.ILoggerFactory;
 import org.sonatype.inject.EagerSingleton;
+import org.sonatype.inject.Nullable;
 
 /**
  * @author Bernd Vogt <bernd.vogt@sourcepit.org>
@@ -29,7 +30,7 @@ import org.sonatype.inject.EagerSingleton;
 public class Slf4jPlexusInitializer implements Contextualizable
 {
    @Inject
-   public void setLoggerManager(LoggerManager loggerManager)
+   public void setLoggerManager(@Nullable LoggerManager loggerManager)
    {
       final ILoggerFactory factory = StaticLoggerBinder.getSingleton().getLoggerFactory();
       if (factory instanceof PlexusLoggerFactory)
