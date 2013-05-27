@@ -6,11 +6,11 @@
 		<version>10</version>
 	</parent>
 	<artifactId>slf4j-plexus</artifactId>
-	<version>0.1.0-alpha-4</version>
+	<version>0.1.0-SNAPSHOT</version>
 
 	<scm>
 		<connection>scm:git:git@github.com:sourcepit/slf4j-plexus.git</connection>
-	  <tag>slf4j-plexus-0.1.0-alpha-4</tag>
+	  <tag>HEAD</tag>
   </scm>
 
 	<!-- repo to resolve parent pom from -->
